@@ -1,4 +1,5 @@
-- name: Install UI package
-  package:
-    name: ui
-    state: latest
+---
+- name: Install ui packages
+  yum:
+    name: "{{ ui_rpm_packages }}"
+    state: installed

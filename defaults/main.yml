@@ -1,0 +1,14 @@
+---
+ui_rpm_packages:
+ - aria2
+ - davix
+ - dcap
+ - fuse
+ - gfal2-all
+ - xrootd-client
+ - nordugrid-arc-client
+ - voms-clients-cpp
+
+# voms-clients-cpp
+# - voms-clients-java
+# - nordugrid-arc-client
