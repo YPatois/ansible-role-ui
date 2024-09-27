@@ -1,14 +1,15 @@
 ---
 ui_rpm_packages:
  - aria2
+ - c-ares
  - davix
  - dcap
  - fuse
  - gfal2-all
+ - globus-gass-copy-progs
+ - globus-proxy-utils
+ - openldap-clients
+ - uberftp
  - xrootd-client
  - nordugrid-arc-client
- - voms-clients-cpp
-
-# voms-clients-cpp
-# - voms-clients-java
-# - nordugrid-arc-client
+ - voms-clients-java
