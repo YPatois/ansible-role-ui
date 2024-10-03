@@ -11,5 +11,6 @@ ui_rpm_packages:
  - openldap-clients
  - uberftp
  - xrootd-client
- - nordugrid-arc-client
+ - nordugrid-arc6-client
+ - nordugrid-arc6-plugins-globus
  - voms-clients-java
