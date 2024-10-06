@@ -3,3 +3,12 @@
   yum:
     name: "{{ ui_rpm_packages }}"
     state: installed
+
+
+# Create a test user
+- name: Create test user
+  user:
+    name: "griduser"
+    shell: "/bin/bash"
+    home: "/home/griduser"
+    state: present
