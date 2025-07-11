@@ -1,16 +1,35 @@
 ---
+rc_version: 6
+
 ui_rpm_packages:
+ #- ui : we can't use UI as it's asking for arc6
+ # So we manually list all dependencies.
  - aria2
- - c-ares
- - davix
+ - ca-policy-egi-core
+ - condor
+ - cvmfs
+ - davix-libs
  - dcap
+ - dcap-devel
+ - dcap-libs
+ - dcap-tunnel-gsi
+ - dcap-tunnel-krb
+ - dcap-tunnel-ssl
+ - dcap-tunnel-telnet
+ - fetch-crl
  - fuse
+ - fuse-libs
  - gfal2-all
- - globus-gass-copy-progs
- - globus-proxy-utils
+ - gfal2-devel
+ - gfal2-doc
+ - ginfo
+ - globus-gsi-cert-utils-progs
+ - gsi-openssh-clients
+ - lcg-infosites
+ - myproxy
  - openldap-clients
- - uberftp
- - xrootd-client
- - nordugrid-arc6-client
- - nordugrid-arc6-plugins-globus
+ - python3-gfal2
+ - python3-gfal2-util
+ - voms
  - voms-clients-java
+ - xrootd-client

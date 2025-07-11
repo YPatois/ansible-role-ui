@@ -1,9 +1,25 @@
 ---
+# Remove old arc packages
+#- name: Remove old arc packages
+#  yum:
+#    name: "nordugrid-arc{{ arc_version | int - 1 }}*"
+#    state: removed
+
+# debug print arc_ui_packages
+- name: debug print arc_ui_packages
+  debug:
+    var: arc_ui_packages
+
+- name: Install ARC packages
+  yum:
+    name: "{{ item }}"
+    state: installed
+  with_items: "{{ arc_ui_packages[arc_version] | default({}) }}"
+
 - name: Install ui packages
   yum:
     name: "{{ ui_rpm_packages }}"
     state: installed
-
 
 # Create a test user
 - name: Create test user

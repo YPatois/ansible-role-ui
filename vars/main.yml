@@ -1,0 +1,12 @@
+---
+arc_ui_packages:
+  6:
+    - nordugrid-arc6-client
+    - nordugrid-arc6-plugins-globus
+  7:
+    - nordugrid-arc7-client
+    - nordugrid-arc7-plugins-gfal
+    - nordugrid-arc7-plugins-globus
+    - nordugrid-arc7-plugins-needed
+    # Lets add oidc auth too
+    - oidc-agent-cli
