@@ -15,4 +15,3 @@ galaxy_info:
 #  - { role: 'umd', release: 5, crl_deploy: true }
 #  -  role: 'ansible-role-munge'
 #  -  role: 'ansible-role-slurm'
-
